@@ -1,4 +1,4 @@
-import '../styles/style.css'
+import '../styles/css/style.css'
 import Heading from './heading'
 import Navbar from './navbar'
 import Subscribe from './subscribe'
