@@ -6,4 +6,20 @@
 body {
   font-family: "Times New Roman", Times, serif;
 }
+
+#container {
+  margin: 0px auto;
+  overflow: auto;
+  padding: 0 30px;
+}
+
+#navbar {
+  height: fit-content;
+}
+
+#navbar nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*# sourceMappingURL=style.css.map */

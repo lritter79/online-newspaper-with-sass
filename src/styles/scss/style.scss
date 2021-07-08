@@ -8,3 +8,19 @@ $font-stack:  'Times New Roman', Times, serif;
 body{
     font-family: $font-stack;
 }
+
+#container {
+    margin: 0px auto;
+    overflow: auto;
+    padding: 0 30px;
+}
+
+#navbar {
+    height: fit-content;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
