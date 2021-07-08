@@ -1,3 +1,8 @@
+# About this repo
+
+This is a project I started with the goal of practicing SASS. I used CreateReactApp to scaffold a simple react app, wrote some components, and then started working on styling from scratch, instead of just copying my [Online Newspaper In Less](https://github.com/lritter79/online-newspaper-with-less)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
