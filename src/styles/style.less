@@ -1,0 +1,125 @@
+//import example
+@import url(articleStyles.less);
+@import url(navbarStyles.less);
+@primarycolor: black;
+@backgroundcolor: #FEFBEA;
+@fontSize: 5px;
+
+
+html {
+     height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#container{
+    background-color: @backgroundcolor;
+    font-family: 'Georgia','Times New Roman', Times, serif;
+}
+
+.flex {
+    display: flex;   
+    align-items: center;
+     
+}
+
+.flex, #navbar > nav {
+    @media screen {
+        flex-direction: row;
+        @media (max-width: 615px) {
+            flex-direction:  column;
+        }
+    }
+}
+/*
+Nesting
+*/
+#top {
+    border-bottom: 2px @primarycolor solid;
+    
+
+    #heading {
+        //mixin https://www.tutorialspoint.com/less/less_mixins.htm
+        .flex;
+        justify-content: left;
+        div {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #logo {
+            img {
+                border: 2px solid;
+                border-radius: 50%;
+                height: 50px;              
+            }
+        }          
+    } 
+}
+
+
+ //parameter mixin: https://www.tutorialspoint.com/less/less_parametric_mixins.htm
+ .padding(@pxTop; @pxLeft) {
+    padding-top: @pxTop;
+    padding-left: @pxLeft;
+ }
+ 
+ .title {
+    .padding(2px; 2px);
+ }
+
+ //LESS - Passing Rulesets to Mixins
+ //https://www.tutorialspoint.com/less/passing_rulesets_to_mixins.html
+ @detached-ruleset: {
+    .mixin() {
+       margin: 2px;
+    }
+ };
+
+ .title {
+    @detached-ruleset();
+    .mixin();
+ }
+
+ .mixinSubType (@a) when (@a > 10) {
+    font-size: @a * 2;
+ }
+ 
+ .mixinSubType (@a) when (@a < 10) {
+    font-size: @a * 3;
+ }
+ 
+ .subType {
+    .mixinSubType(@fontSize)
+ }
+
+#footer{
+    background-color: darkgrey;   
+    #disclaimer {
+        font-size: @fontSize * 2;
+        font-weight: lighter;       
+    }
+}
+
+#footer, #subscribe {
+    text-align: center;
+}
+
+#subscribe {
+    margin: 5px;
+    border-top: 1px solid black;
+    
+}
+
+#subTypes {
+    text-align: left;
+    margin-left: auto;
+    margin-right:auto;
+    width: fit-content;
+    margin-bottom: 16px;
+    input[type="checkbox"]:checked{
+        background-color: black;
+    }
+}    
+

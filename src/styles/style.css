@@ -1,0 +1,163 @@
+li {
+  color: green;
+}
+.article {
+  font-size: 15px;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.mostPopular {
+  font-weight: bolder;
+}
+.mostPopular::before {
+  content: "Most Popular Today: ";
+  color: red;
+}
+ol,
+ul {
+  font-family: sans-serif;
+}
+ul {
+  padding-top: 10px;
+}
+/* 
+Variable scope specifies the place of the available variable. 
+The variables will be searched from the local scope and if they are not available, 
+then compiler will search from the parent scope.
+*/
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navLink,
+#home,
+.navLinkBottom {
+  text-decoration: none;
+  color: black;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  transition: background-color 0.5s;
+}
+#home {
+  transition: none;
+  background-color: black;
+  color: #FEFBEA;
+  border-radius: 3px;
+}
+.navLinkBottom {
+  font-weight: lighter;
+}
+.navLink:hover,
+.navLinkBottom:hover {
+  background-color: whitesmoke;
+}
+.navLink:hover,
+#home:hover,
+.navLinkBottom:hover {
+  color: grey;
+}
+#search {
+  margin-left: auto;
+}
+@media (max-width: 615px) {
+  #search {
+    display: none;
+  }
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#container {
+  background-color: #FEFBEA;
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+@media screen {
+  .flex,
+  #navbar > nav {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 615px) {
+  .flex,
+  #navbar > nav {
+    flex-direction: column;
+  }
+}
+/*
+Nesting
+*/
+#top {
+  border-bottom: 2px black solid;
+}
+#top #heading {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+@media screen {
+  #top #heading {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 615px) {
+  #top #heading {
+    flex-direction: column;
+  }
+}
+#top #heading div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#top #heading #logo img {
+  border: 2px solid;
+  border-radius: 50%;
+  height: 50px;
+}
+.title {
+  padding-top: 2px;
+  padding-left: 2px;
+}
+.title {
+  margin: 2px;
+}
+.subType {
+  font-size: 15px;
+}
+#footer {
+  background-color: darkgrey;
+}
+#footer #disclaimer {
+  font-size: 10px;
+  font-weight: lighter;
+}
+#footer,
+#subscribe {
+  text-align: center;
+}
+#subscribe {
+  margin: 5px;
+  border-top: 1px solid black;
+}
+#subTypes {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-bottom: 16px;
+}
+#subTypes input[type="checkbox"]:checked {
+  background-color: black;
+}
