@@ -1,0 +1,8 @@
+#navbar {
+    height: fit-content;
+
+    nav {
+        @include centered-flexbox;
+    }
+}
+
