@@ -17,10 +17,7 @@ function Heading () {
                       Et Latine Tantum Nova Cum AD 0
                   </i>
               </div>
-              <div id="search">
-                  Search: 
-                  <input type="text"/>
-              </div>
+              
           </div>
                                     
     )

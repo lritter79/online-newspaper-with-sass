@@ -1,7 +1,9 @@
 $font-stack:  'Times New Roman', Times, serif;
 $globalColor: red;
 $tyrianPurple: #66023C;
-@mixin centered-flexbox {
+// Defining values
+
+%centered-flexbox {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -49,7 +51,7 @@ body{
 #heading {
     
     color: $tyrianPurple;
-    @include centered-flexbox;
+    @extend %centered-flexbox;
     @include reusable-margin;
   div {
       margin: 4px 0;
@@ -81,7 +83,7 @@ body{
 }
 
 #articles {
-    @include centered-flexbox;
+    @extend %centered-flexbox;
 }
 
 #footer {

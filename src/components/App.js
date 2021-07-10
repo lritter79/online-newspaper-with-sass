@@ -11,7 +11,14 @@ function App() {
     <div id="container">
       <div id="top">
             <Heading />
-            <Navbar />                      
+            <div>
+              <Navbar />   
+              <div id="search">
+                    Search: 
+                    <input type="text"/>
+                </div> 
+            </div>
+                              
       </div>
       <div id="middle">
           <Articles></Articles>

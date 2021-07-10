@@ -1,3 +1,9 @@
+#heading, #articles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +24,6 @@ body {
 
 #heading {
   color: #66023C;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   margin: 5px;
   border-radius: 5px;
   border-width: 5px;
@@ -61,12 +64,6 @@ body {
   width: fit-content;
 }
 
-#articles {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 #footer {
   background-color: #66023C;
 }
@@ -77,11 +74,11 @@ body {
 
 #navbar {
   height: fit-content;
+  width: 50%;
 }
 
 #navbar nav {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 /*# sourceMappingURL=style.css.map */

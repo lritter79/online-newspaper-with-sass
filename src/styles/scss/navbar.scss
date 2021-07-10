@@ -1,8 +1,9 @@
 #navbar {
     height: fit-content;
-
+    width: 50%;
     nav {
-        @include centered-flexbox;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 

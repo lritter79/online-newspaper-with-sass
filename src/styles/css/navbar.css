@@ -1,0 +1,10 @@
+#navbar {
+  height: fit-content;
+  width: 50%;
+}
+
+#navbar nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+/*# sourceMappingURL=navbar.css.map */

@@ -6,7 +6,7 @@ function Articles() {
     <div id="articles" style={{display:"flex"}}>
       {ArticleList.map((data, key) => {
           return (
-            <div className="article" style={{display:"flex"}}>
+            <div className={`article ${ArticleList.length === key ? "shadow": ""}`} style={{display:"flex"}}>
                 <img src={"images/stock_photos/" + data.img} style={{width:"100px", maxHeight:"67px"}} alt={data.img} />
                 <div>
                     <a href style={{top:"50%"}}>
