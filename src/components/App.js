@@ -5,18 +5,16 @@ import Subscribe from './subscribe'
 import Footer from './footer'
 import BoxOffice from './boxOffice'
 import Articles  from './articles'
+import SearchBar from './searchBar'
 
 function App() {
   return (
     <div id="container">
       <div id="top">
             <Heading />
-            <div>
+            <div style={{display:"flex", margin:"5px", borderBottom: "2px solid #bfbfbf"}}>
               <Navbar />   
-              <div id="search">
-                    Search: 
-                    <input type="text"/>
-                </div> 
+              <SearchBar />
             </div>
                               
       </div>

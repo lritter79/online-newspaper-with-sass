@@ -1,9 +1,31 @@
+$theRightShadeOfLightGrey:#e3e3e3;
+@mixin border-and-padding-interpolation($top, $right, $bottom, $left, $property){
+    #{$property}: #{$top}px #{$right}px  #{$bottom}px   #{$left}px; 
+}
+
+@mixin each-loop-with-interpolation($directionsArr, $property, $number) {
+    @each $direction in $directionsArr {
+        #{$property}-#{$direction}: #{$number}px;
+      }
+}
+
 #navbar {
     height: fit-content;
     width: 50%;
     nav {
         display: flex;
         justify-content: space-evenly;
+        a{
+            color:hsl(325,96,20);
+            @include border-and-padding-interpolation(0, 2, 0, 2, margin);
+            @include each-loop-with-interpolation(left top bottom right, padding, 5);
+            //padding: 5px;
+            &:hover {
+                background-color: hsl(325,96,20);
+                color: white;
+                border-radius: 30px;
+            }
+        }
     }
 }
 

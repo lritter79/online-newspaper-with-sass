@@ -1,6 +1,6 @@
 $font-stack:  'Times New Roman', Times, serif;
 $globalColor: red;
-$tyrianPurple: #66023C;
+$tyrianPurple:hsl(325,96,20);
 // Defining values
 
 %centered-flexbox {
@@ -93,4 +93,14 @@ body{
     }
 }
 
+#search {
+    margin-left: auto;
+}
+
 @import "navbar";
+
+#footer {
+    nav {
+        @extend %centered-flexbox;
+    }
+}

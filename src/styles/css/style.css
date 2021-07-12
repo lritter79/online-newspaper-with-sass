@@ -1,4 +1,4 @@
-#heading, #articles {
+#heading, #articles, #footer nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -23,11 +23,11 @@ body {
 }
 
 #heading {
-  color: #66023C;
+  color: #64023b;
   margin: 5px;
   border-radius: 5px;
   border-width: 5px;
-  border-color: #66023C;
+  border-color: #64023b;
   border-style: solid;
 }
 
@@ -42,7 +42,7 @@ body {
 #heading #logo {
   border-radius: 30px;
   border-width: 3px;
-  border-color: #66023C;
+  border-color: #64023b;
   border-style: solid;
 }
 
@@ -53,7 +53,7 @@ body {
 #subscribe {
   border-radius: 5px;
   border-width: 5px;
-  border-color: #66023C;
+  border-color: #64023b;
   border-style: solid;
   margin: 10px auto;
   width: 50%;
@@ -65,11 +65,15 @@ body {
 }
 
 #footer {
-  background-color: #66023C;
+  background-color: #64023b;
 }
 
 #footer nav {
   color: white;
+}
+
+#search {
+  margin-left: auto;
 }
 
 #navbar {
@@ -80,5 +84,20 @@ body {
 #navbar nav {
   display: flex;
   justify-content: space-evenly;
+}
+
+#navbar nav a {
+  color: #64023b;
+  margin: 2px 3px 2px 3px;
+  padding-left: 5px;
+  padding-up: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+#navbar nav a:hover {
+  background-color: #64023b;
+  color: white;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=style.css.map */
