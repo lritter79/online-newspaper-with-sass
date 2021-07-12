@@ -1,4 +1,11 @@
-$theRightShadeOfLightGrey:#e3e3e3;
+@use "sass:map";
+//color map: https://sass-lang.com/documentation/values/maps
+$theme-colors: (
+    "theRightShadeOfLightGrey" :#e3e3e3,
+    "tyrianPurple":hsl(325,96,20),
+    "white": white,
+);
+
 @import "centering";
 @mixin border-and-padding-interpolation($top, $right, $bottom, $left, $property){
     #{$property}: #{$top}px #{$right}px  #{$bottom}px   #{$left}px; 
@@ -16,13 +23,13 @@ $theRightShadeOfLightGrey:#e3e3e3;
     nav {
         @extend %centered-flexbox;
         a{
-            color:hsl(325,96,20);
+            color:map-get($theme-colors, "tyrianPurple");
             @include border-and-padding-interpolation(2, 0, 2, 0, margin);
             @include each-loop-with-interpolation(left top bottom right, padding, 5);
             //padding: 5px;
             &:hover {
-                background-color: hsl(325,96,20);
-                color: white;
+                background-color:map-get($theme-colors, "tyrianPurple");
+                color: map-get($theme-colors, "white");
                 border-radius: 30px;
             }
         }
