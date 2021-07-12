@@ -27,6 +27,7 @@ body {
 
 #container a {
   font-weight: bold;
+  text-decoration: none;
 }
 
 #heading {
@@ -80,7 +81,8 @@ body {
 }
 
 #search {
-  margin-left: auto;
+  margin: auto;
+  margin-right: 0;
 }
 
 #heading, #articles, #navbar nav, #footer nav {

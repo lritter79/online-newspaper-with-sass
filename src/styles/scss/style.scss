@@ -39,6 +39,7 @@ body{
     //padding: 0 30px;
     a {
         font-weight: bold;
+        text-decoration: none;
     }
 }
 
@@ -90,10 +91,11 @@ body{
 }
 
 #search {
-    margin-left: auto;
+    //example of css property nesting
+    margin: auto {
+        right: 0;
+    }
 }
-
-
 
 @import "navbar";
 
