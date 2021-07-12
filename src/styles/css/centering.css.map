@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/centering.scss"
+    ],
+    "names": [],
+    "file": "centering.css"
+}

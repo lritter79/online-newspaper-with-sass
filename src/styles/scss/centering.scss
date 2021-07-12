@@ -1,0 +1,12 @@
+%centered-flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+%centered-not-flex {
+    display:block;
+    width:fit-content;
+   height: 100%;
+   margin: 0 auto;
+}

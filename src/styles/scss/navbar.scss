@@ -1,4 +1,5 @@
 $theRightShadeOfLightGrey:#e3e3e3;
+@import "centering";
 @mixin border-and-padding-interpolation($top, $right, $bottom, $left, $property){
     #{$property}: #{$top}px #{$right}px  #{$bottom}px   #{$left}px; 
 }
@@ -13,11 +14,10 @@ $theRightShadeOfLightGrey:#e3e3e3;
     height: fit-content;
     width: 50%;
     nav {
-        display: flex;
-        justify-content: space-evenly;
+        @extend %centered-flexbox;
         a{
             color:hsl(325,96,20);
-            @include border-and-padding-interpolation(0, 2, 0, 2, margin);
+            @include border-and-padding-interpolation(2, 0, 2, 0, margin);
             @include each-loop-with-interpolation(left top bottom right, padding, 5);
             //padding: 5px;
             &:hover {

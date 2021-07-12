@@ -2,12 +2,8 @@ $font-stack:  'Times New Roman', Times, serif;
 $globalColor: red;
 $tyrianPurple:hsl(325,96,20);
 // Defining values
+@import "centering";
 
-%centered-flexbox {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 @mixin reusable-border($width, $circle: false)  {
     @if $circle {
@@ -97,10 +93,22 @@ body{
     margin-left: auto;
 }
 
+
+
 @import "navbar";
 
 #footer {
+    a {
+        color: white;
+    }
     nav {
         @extend %centered-flexbox;
+    }
+    #disclaimer {
+        font-weight:lighter;
+        color: white;
+        font-size: 10px;
+
+        @extend %centered-not-flex
     }
 }
